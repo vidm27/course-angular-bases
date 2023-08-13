@@ -8,13 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public title: string = 'Mi primera app de Angular, no se ve dificil'; // son propiedad de Angular
   public counter: number = 10;
-
-  increaseBy(value: number): void{
-    this.counter +=1;
-  }
-
-  descreassBy(value: number): void{
-    this.counter -=1;
+  increaseBy(value: number): void {
+    this.counter += value;
   }
 
   resetCount(): void {
