@@ -5,9 +5,9 @@ import { Component } from "@angular/core";
   selector: 'app-counter', // es recomendable utilizar prefijos para los nombres de los componentes
   template: `<h1>Hola counter</h1>
   <p>Counter: {{counter}}</p>
-<button (click)="increaseBy(1)">+1</button>
-<button (click)="resetCount()">Reset</button>
-<button (click)="increaseBy(-1)">-1</button>
+<button class="btn btn-primary" (click)="increaseBy(1)">+1</button>
+<button class="btn btn-primary" (click)="resetCount()">Reset</button>
+<button class="btn btn-primary" (click)="increaseBy(-1)">-1</button>
   `
 })
 
