@@ -61,3 +61,10 @@ public characterList: Character[] = [{
 ```
 
 Para decirle a un componente hijo que va recibir valores desde el padre, debes agregar el decorador **@Input()** el cual le puede especificar el nombre de la propiedad y si no, toma el nombre de la propiedad donde se utiliza. 
+
+Curiosidades de Angular: cualquier propiedad html que se coloque en llaves [] le decimos a angular que la controle.
+
+Two-way-data-binding: permite conectar la parte de html con typescript. Si hace un cambio en uno se refleja en otro.
+
+- ngModel: Es un directiva que nos permite hacer un binding con los *input*, *select*, *textarea* el cual nos permite tener un control del estado de formulario. Esto requiere la importacion del modulo FormModule.
+
