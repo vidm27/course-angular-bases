@@ -1,4 +1,6 @@
-# Que buscamos al construir los componentes?
+# Seccion 4
+Que buscamos al construir los componentes?
+
 Buscamos que nuestros componentes sean chicos.
 
 
@@ -33,3 +35,14 @@ Un modulo agrupa funcionalidades. Nuestro modulos son visibles son dentro del mo
 
 video 49
 El common modulo es donde se encuentra alojado las directivas de *ngfor, *ngif
+
+# Seccion 5
+
+En readme debemos poner los pasos especiales que se ocupan para la aplicacion.
+
+- Crear modulos con angular NG-CLI: `ng g m nombre_modulo`
+
+Imporatcion de modulos: Angular pueder importa un modulo 
+en varios lugares, pero angular es inteligente y los mantinene en cache o memoria y reautiliza el modulo desde su primera importacion.
+
+- pages: son componentes que tienen mas componentes dentro y son utilzadas mediante el router de angular. 
