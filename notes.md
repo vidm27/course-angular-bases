@@ -46,3 +46,18 @@ Imporatcion de modulos: Angular pueder importa un modulo
 en varios lugares, pero angular es inteligente y los mantinene en cache o memoria y reautiliza el modulo desde su primera importacion.
 
 - pages: son componentes que tienen mas componentes dentro y son utilzadas mediante el router de angular. 
+
+- app: la palabra app-nombre se usa cuando no utlizamos componentes personalizados, cuando ya tienes componentes perzonalizados, no utlizas app sino el del componente.
+
+Interfaces: cuando yo trabajo con las interfaces me sirven para la parte de desarrollo, pero cuando hago el build de la aplicacion pasa a ser 0 codigo de javascript. 
+
+**Propiedad Input**
+```
+@Input()
+public characterList: Character[] = [{
+    name: 'Trunks',
+    power: 10000
+}]
+```
+
+Para decirle a un componente hijo que va recibir valores desde el padre, debes agregar el decorador **@Input()** el cual le puede especificar el nombre de la propiedad y si no, toma el nombre de la propiedad donde se utiliza. 
