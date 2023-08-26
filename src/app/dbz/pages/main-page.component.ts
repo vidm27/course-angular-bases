@@ -17,7 +17,12 @@ export class MainPageComponent {
   { name: 'Vegeta', power: 10000 }]
 
   onNewCharacter(character: Character): void {
-    console.log("Main Page");
-    console.log(character);
+    console.log(character)
+    this.characters.push(character)
+    console.log('Characters: ', this.characters)
+  }
+
+  onDeleteCharacter(characterIndex: number){
+    this.characters.splice(characterIndex, 1)
   }
 }
