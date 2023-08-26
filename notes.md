@@ -68,3 +68,11 @@ Two-way-data-binding: permite conectar la parte de html con typescript. Si hace 
 
 - ngModel: Es un directiva que nos permite hacer un binding con los *input*, *select*, *textarea* el cual nos permite tener un control del estado de formulario. Esto requiere la importacion del modulo FormModule.
 
+### Emision de eventos al padre
+
+Cuando queremos realizar una emision de eventos desde el hijo hasta el padre, angular se apoya en RXJS para terner programacion reactiva. Entonces, para crear un evento desde el hijo `@Output()
+  public onNewCharacter: EventEmitter<Character> = new EventEmitter();` donde especificamos que es lo que va fluir por la emision.
+
+Para escuchar el evento en nuestro elemento padre, Angular tiene una variables `$event` donde este es una variable especializada y sabe que tipo de evento es y que es lo que se envia.
+
+
